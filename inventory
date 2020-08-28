@@ -1,0 +1,5 @@
+[ansible_client]
+192.168.99.103
+
+[ansible_server]
+192.168.99.105

@@ -1,0 +1,10 @@
+---
+- name: using copy module
+  hosts: all
+  become: true
+  tasks:
+  - name: Copy content to a file
+    copy:
+      content="Copied content from master node to worker node\n"
+      dest=/home/vagrant/ansible/firstfile.txt
+...

@@ -1,0 +1,11 @@
+---
+- name: use of archive module
+  hosts: all
+  become: true
+  tasks:
+  - name: Ansible zip file example
+    archive:
+       path: /home/vagrant/ansible/firstfile.txt
+       dest: /home/vagrant/ansible/firstfile.zip
+       format: zip
+...

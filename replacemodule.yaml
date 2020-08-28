@@ -1,0 +1,9 @@
+---
+- name: use of replace module
+  hosts: all
+  tasks:
+  - name: Replace example
+    replace:
+       path: /home/vagrant/ansible/firstfile.txt
+       regexp: "Copied content from master node to worker node"
+       replace: "replacing into a new file"

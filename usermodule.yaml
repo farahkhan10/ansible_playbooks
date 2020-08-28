@@ -1,0 +1,11 @@
+---
+- name: using user module
+  hosts: all
+  tasks:
+  - name: Create user
+    user: 
+      name=farah
+      password=farah
+      groups=vagrant
+      shell=/bin/bash
+...

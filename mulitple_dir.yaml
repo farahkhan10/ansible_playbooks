@@ -1,0 +1,14 @@
+---
+- name: mulitple directories
+  hosts: all
+  become: true
+  tasks:
+  - name: Create multiple directories
+    file:
+       path={{item}}
+       state=directory
+    with_items:
+    - '/home/vagrant/ansible/vn1'
+    - '/home/vagrant/ansible/vn2'
+    - '/home/vagrant/ansible/vn3'
+...
